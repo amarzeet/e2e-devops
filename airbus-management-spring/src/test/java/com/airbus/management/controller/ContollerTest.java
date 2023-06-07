@@ -1,23 +1,22 @@
 package com.airbus.management.controller;
 
-import static org.junit.Assert.assertNotNull;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.airbus.management.model.Product;
 import com.airbus.management.service.ProductService;
 
-@RunWith(MockitoJUnitRunner.class)
-public class TestMainController {
+@SpringBootTest
+public class ContollerTest {
 	
 	@InjectMocks
 	private MainController mainController;
